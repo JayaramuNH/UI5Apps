@@ -17,7 +17,8 @@ sap.ui.define([
 						{"Name":"A4"},
 						{"Name":"A5"},
 						{"Name":"A6"},
-						{"Name":"A7"}
+						{"Name":"A7"},
+						{"Name":"A8"}
 			];
 		
 		var oModel = new sap.ui.model.json.JSONModel();
