@@ -1,0 +1,47 @@
+<mvc:View controllerName="Ztest_jaya.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+				
+							
+				<List
+					items="{mList>/}"
+					headerText="Products">
+					<items>
+						<ObjectListItem
+							title="{mList>Name}"
+							type="Active"
+							press="onListItemPress"
+							number="{
+								parts:[{path:'Price'},{path:'CurrencyCode'}],
+								type: 'sap.ui.model.type.Currency',
+								formatOptions: {showMeasure: false}
+							}"
+							numberUnit="{CurrencyCode}">
+							<firstStatus>
+								<ObjectStatus
+									text="{Status}"
+									state="{
+										path: 'Status',
+										formatter: 'sap.m.sample.ObjectListItem.Formatter.status'
+									}" />
+							</firstStatus>
+							<attributes>
+								<ObjectAttribute text="{WeightMeasure} {WeightUnit}" />
+								<ObjectAttribute text="{Width} x {Depth} x {Height} {DimUnit}" />
+							</attributes>
+						</ObjectListItem>
+					</items>
+				</List>
+				
+				
+				<Button icon="sap-icon://write-new-document" press="onPress" class="empCreate" />
+					
+			
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
