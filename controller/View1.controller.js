@@ -11,7 +11,7 @@ sap.ui.define([
 						{"Name":"A3"},
 						{"Name":"A4"},
 						{"Name":"A5"},
-						{"Name":"A6"},
+			 			{"Name":"A6"},
 						{"Name":"A7"},
 						{"Name":"A3"},
 						{"Name":"A4"},
