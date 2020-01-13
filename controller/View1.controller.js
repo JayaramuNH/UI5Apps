@@ -18,6 +18,7 @@ sap.ui.define([
 						{"Name":"A5"},
 						{"Name":"A6"},
 						{"Name":"A7"},
+						{"Name":"A8"},
 						{"Name":"A8"}
 			];
 		
